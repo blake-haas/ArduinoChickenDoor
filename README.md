@@ -11,6 +11,6 @@ Parts list:
 3. LM393 Digital Light Intensity Photosensitive Sensor Module for Arduino UNO
 4. Power source 9v / 12v. For me it was a 12v tractor battery with a LM2596s Buck Converter tuned to 9v. 
 5. Wires and a clear container to mount the light sensing hardware (mayo jar for me).
-6 A 3d printer to print my designed parts for the eglu cube or your own diy solution for your coop.
+6. A 3d printer to print my designed parts for the eglu cube or your own diy solution for your coop.
 7. Misc m2 bolts / 1 m3 for my designed parts.
 8. Silicone / Gasket maker to seal the servo body if using my designed parts.
