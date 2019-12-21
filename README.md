@@ -1,7 +1,8 @@
 # ArduinoChickenDoor
-Automatic door for chicken coop (eglu cube)
+Automatic door for chicken coop (eglu cube) | Can be adapted to work with any coop.
+Designed for very low power usage.
 
-This is the code for an automatic chicken door based on light levels.
+This is a project for an automatic chicken door based on light levels.
 Door closes at around 19 lux and opens after 50 lux.
 
 Parts list:
