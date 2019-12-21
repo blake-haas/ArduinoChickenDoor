@@ -13,3 +13,4 @@ Parts list:
 5. Wires and a clear container to mount the light sensing hardware (mayo jar for me).
 6 A 3d printer to print my designed parts for the eglu cube or your own diy solution for your coop.
 7. Misc m2 bolts / 1 m3 for my designed parts.
+8. Silicone / Gasket maker to seal the servo body if using my designed parts.
