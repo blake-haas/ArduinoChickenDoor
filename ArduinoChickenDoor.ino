@@ -6,10 +6,10 @@
 
 int SERVO_PIN = 9;
 int LIGHT_SENSOR_ANALOG_PIN = A0;
-int LOW_LIGHT_THRESHOLD = 270; // ~19.5 lux
-int HIGH_LIGHT_THRESHOLD = 200; // ~50 lux
-int LIGHT_HIT_COUNT = 15;
-
+int LOW_LIGHT_THRESHOLD = 500; // ~1.3 lux You need to calibrate this against a lux meter, each sensor has its own resistance values.
+int HIGH_LIGHT_THRESHOLD = 210; // ~24 lux
+int HIGH_LIGHT_HIT_COUNT = 15; // 15 min
+int LOW_LIGHT_HIT_COUNT = 20; // 20 min
 int LowLightCount = 0;
 int HighLightCount = 0;
 int DoorState = 0; // 0 is unknown // 1 is open // 2 is closed
@@ -89,8 +89,8 @@ void sleep(int ncycles)
 }
 void setup() {
   // put your setup code here, to run once:
-//  Serial.begin(9600);
-//  while (! Serial) {}  // wait for serial monitor to attach
+  //Serial.begin(115200);
+  //while (! Serial) {}  // wait for serial monitor to attach
   // Initialize the door open.
   openDoor();
   delay(20);
@@ -101,7 +101,7 @@ void setup() {
 void loop() {
   int16_t currentLightLevel = analogRead(LIGHT_SENSOR_ANALOG_PIN);
   setLightLevel(currentLightLevel);
-  if (HighLightCount == LIGHT_HIT_COUNT && DoorState != 1) {
+  if (HighLightCount == HIGH_LIGHT_HIT_COUNT && DoorState != 1) {
 //    Serial.print("HighLightCount: ");
 //    Serial.print(HighLightCount);
 //    Serial.println("");
@@ -115,7 +115,7 @@ void loop() {
     // Open the Door
     openDoor();
   }
-  if (LowLightCount == LIGHT_HIT_COUNT && DoorState != 2) {
+  if (LowLightCount == LOW_LIGHT_HIT_COUNT && DoorState != 2) {
 //    Serial.print("HighLightCount: ");
 //    Serial.print(HighLightCount);
 //    Serial.println("");
@@ -136,14 +136,14 @@ void setLightLevel(int16_t level) {
     // We got a low light value, RESET the high count
     HighLightCount = 0;
     LowLightCount = LowLightCount + 1;
-    if (LowLightCount < LIGHT_HIT_COUNT) {
+    if (LowLightCount < LOW_LIGHT_HIT_COUNT) {
       // stop incrementing
       LowLightCount = LowLightCount + 1;
     }
   } else if (level <= HIGH_LIGHT_THRESHOLD) {
     // We got a high light value, RESET the low count
     LowLightCount = 0;
-    if (HighLightCount < LIGHT_HIT_COUNT) {
+    if (HighLightCount < HIGH_LIGHT_HIT_COUNT) {
       // stop incrementing
       HighLightCount = HighLightCount + 1;
     }
