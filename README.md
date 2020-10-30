@@ -15,8 +15,8 @@ Parts list:
 7. Misc M2, M3 and M4 bolts for my designed parts (Not Necessary if using ServoCoverBody_ClosedTop).
 8. Silicone / Gasket maker to seal the servo body if using my designed parts (Not Necessary if using ServoCoverBody_ClosedTop).
 
-This has lasted over 2 seasons and is doing great!
-Enancements after 2 seasons of use:
+This has lasted through a winter and is doing great!
+Enancements after summer and winter use:
 
 Wire in a 5vdc converter to have a solid 5v off of the main 9v power vs having the arduino try to handle the load (my uno handles it but just barely).
 
@@ -29,4 +29,4 @@ from the jar lid. This keeps the entire inside of the jar bone dry while still a
 Im located in minnesota. I upgraded my power source (battery) to a full 12v car battery to power this thing and i use a 30w solar panel to trickle charge it all day.
 It works flawlessly this way all summer. In the winter i have a trickle charger plugged in via extension cord to keep it topped off.
 
-Lastly, i covered the uno and electronics in some clear nail polish to protect from moisture (just in case).
+Lastly, I covered the uno and electronics in some clear nail polish to protect from moisture (just in case).
