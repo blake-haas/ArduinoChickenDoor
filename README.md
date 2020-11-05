@@ -17,6 +17,7 @@ Parts list:
 
 This has lasted through a winter and is doing great!
 Enancements after summer and winter use:
+Get a metal T spline Metal Aluminum 25T Servo Horn, the printed one will eventually fail.
 
 Wire in a 5vdc converter to have a solid 5v off of the main 9v power vs having the arduino try to handle the load (my uno handles it but just barely).
 
