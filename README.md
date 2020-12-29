@@ -12,11 +12,14 @@ Parts list:
 4. Power source 9v / 12v. For me it was a 12v tractor battery with a LM2596s Buck Converter tuned to 9v. 
 5. Wires and a clear container to mount the light sensing hardware (mayo jar for me).
 6. A 3d printer to print my designed parts for the eglu cube or your own diy solution for your coop.
-7. Misc M2, M3 and M4 bolts for my designed parts (Not Necessary if using ServoCoverBody_ClosedTop).
+7. Misc M2, M3 and M4 bolts for my designed parts.
 8. Silicone / Gasket maker to seal the servo body if using my designed parts (Not Necessary if using ServoCoverBody_ClosedTop).
 
 This has lasted through a winter and is doing great!
 Enancements after summer and winter use:
+I RECOMMEND USING THE ServoStand_v2_Short.stl WITH THE ServoHandleAdapter.stl. It has better alignment and smoother operation!
+CHECK OUT THE WIRE DIAGRAM (AutoChickenDoorCoopWireDiagram.png) for the simplest installation.
+
 Get a metal T spline Metal Aluminum 25T Servo Horn, the printed one will eventually fail.
 
 Wire in a 5vdc converter to have a solid 5v off of the main 9v power vs having the arduino try to handle the load (my uno handles it but just barely).
